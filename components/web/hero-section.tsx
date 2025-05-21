@@ -1,13 +1,13 @@
 "use client"
+import BackgroundPattern from "@/components/general/background-pattern"
+import { H } from "@/components/general/heading"
 import { AnimatedGroup } from "@/components/ui/animated-group"
+import { Separator } from "@/components/ui/separator"
 import { cn } from "@/lib/utils"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import type { ComponentProps } from "react"
-import BackgroundPattern from "../general/background-pattern"
-import { H, headingVariants } from "../general/heading"
-import { Separator } from "../ui/separator"
-import DecryptedText from "./decrypted-text"
+import GradientText from "../ui/gradient-text"
 
 type HeroSectionProps = ComponentProps<"section">
 
@@ -33,7 +33,7 @@ const HeroSection = function HeroSection({ className, ...props }: HeroSectionPro
   }
 
   return (
-    <section className={cn("overflow-hidden relative", className)} {...props}>
+    <section className={cn("overflow-hidden relative mb-12", className)} {...props}>
       {/* <Spotlight /> */}
 
       <BackgroundPattern type="dots" />
@@ -66,18 +66,18 @@ const HeroSection = function HeroSection({ className, ...props }: HeroSectionPro
                   </div>
                 </Link>
               </AnimatedGroup>
-              <div className="w-[61%] mx-auto mt-1.5">
-                <DecryptedText
-                  className={cn(headingVariants({ size: "h1" }), "text-foreground")}
-                  text="Your Roadmap to the Decentralized Web"
-                  animateOn="view"
-                  encryptedClassName={cn(headingVariants({ size: "h2" }), "text-primary")}
-                  speed={30}
-                  revealDirection="center"
-                  sequential
-                />
-              </div>
-              <div className="w-[61%] mx-auto mt-4">
+              <H
+                as="h2"
+                className="mt-1.5 mx-auto text-center text-pretty md:max-w-3/4 text-foreground font-semibold"
+              >
+                Your Roadmap to <br /> the
+                <GradientText className="italic font-serif tracking-wide">
+                  {" "}
+                  Decentralized{" "}
+                </GradientText>
+                Web
+              </H>
+              <div className="max-w-[61%] mx-auto mt-4">
                 <H as="h5" variant={"subtle"} align="center">
                   Discover top Web3 tools, dApps, and services — curated to help you build, explore,
                   and thrive in the decentralized ecosystem.

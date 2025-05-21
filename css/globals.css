@@ -165,7 +165,7 @@
   @apply relative after:absolute after:bottom-0 after:-left-[100vw] after:-z-1 after:h-[1.618px] after:w-[200vw] after:bg-border;
 }
 
-.edge-pattern {
+.diagonal-pattern {
   opacity: 0.8;
   background: transparent
     repeating-linear-gradient(
@@ -175,4 +175,24 @@
       transparent 1.618px,
       transparent 7px
     );
+}
+
+/*********** Gradient text animation ************/
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Animation class that can be applied to elements */
+.animate-gradient {
+  animation: gradient linear infinite;
 }

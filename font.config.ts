@@ -3,10 +3,10 @@ import {
   Fira_Code,
   IBM_Plex_Mono,
   Inter,
-  Merriweather,
   Outfit,
   Poppins,
   Space_Grotesk,
+  Ubuntu_Mono,
 } from "next/font/google"
 
 export const inter = Inter({ subsets: ["latin"], weight: ["400"] })
@@ -15,7 +15,7 @@ export const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
   weight: ["400"],
 })
-export const merriweather = Merriweather({
+export const ubuntuMono = Ubuntu_Mono({
   subsets: ["latin"],
   weight: ["400"],
 })
@@ -37,7 +37,7 @@ export const fontMap = {
   Inter: inter.className,
   Poppins: poppins.className,
   IBMPlexMono: ibmPlexMono.className,
-  Merriweather: merriweather.className,
+  UbuntuMono: ubuntuMono.className,
   SpaceGrotesk: spaceGrotesk.className,
   AtkinsonHyperlegible: atkinsonHyperlegible.className,
   FiraCode: firaCode.className,
@@ -59,4 +59,4 @@ export const isFontType = (font: unknown): font is Font => {
 }
 
 export const fontsList: Font[] = Object.keys(fontMap) as Font[]
-export const defaultFont: Font = "Outfit"
+export const defaultFont: Font = "UbuntuMono"

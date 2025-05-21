@@ -1,14 +1,14 @@
 "use client"
 
-import { AuthButton } from "@components/auth/auth-button"
-import { Button } from "@components/ui/button"
-import { cn } from "@lib/utils"
+import { AuthButton } from "@/components/auth/auth-button"
+import Logo from "@/components/general/logo"
+import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
 import { Menu, X } from "lucide-react"
 import type { Session } from "next-auth"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useCallback, useState } from "react"
-import Logo from "../general/logo"
 
 /**
  * Navbar component responsible for rendering the main navigation.
@@ -59,7 +59,7 @@ function WebNavbar({ session }: { session: Session | null }) {
         data-state={menuState && "active"}
         className="z-20 w-full bg-background/15 border-b backdrop-blur md:relative lg:dark:bg-transparent"
       >
-        <div className="flex flex-wrap items-center lg:border-x max-w-[61%] mx-auto justify-between gap-6 py-3 px-4 md:px-6 lg:px-4 lg:gap-0">
+        <div className="flex flex-wrap items-center lg:border-x max-w-5xl mx-auto justify-between gap-6 py-3 px-4 md:px-6 lg:px-4 lg:gap-0">
           {/* Logo and Mobile Toggle Button */}
           <div className="flex w-full justify-between lg:w-auto">
             <Logo width={70} />
