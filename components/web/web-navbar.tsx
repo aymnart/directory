@@ -39,6 +39,7 @@ function WebNavbar({ session }: { session: Session | null }) {
     { name: "Categories", href: "/categories", isActive: pathname.startsWith("/categories") },
     { name: "Advertise", href: "/advertise", isActive: pathname.startsWith("/advertise") },
     { name: "Books", href: "/books", isActive: pathname.startsWith("/books") },
+    { name: "Podcasts", href: "/podcasts", isActive: pathname.startsWith("/podcasts") },
     { name: "Learn", href: "/learn", isActive: pathname.startsWith("/learn") },
     { name: "Submit", href: "/submit", isActive: pathname.startsWith("/advertise") },
   ]
