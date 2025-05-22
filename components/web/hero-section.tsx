@@ -33,12 +33,15 @@ const HeroSection = function HeroSection({ className, ...props }: HeroSectionPro
   }
 
   return (
-    <section className={cn("overflow-hidden relative mb-12", className)} {...props}>
+    <section
+      className={cn("relative bg-background z-10 *:last:mb-18 w-screen", className)}
+      {...props}
+    >
       {/* <Spotlight /> */}
 
       <BackgroundPattern type="dots" />
       <section>
-        <div className="relative mt-4">
+        <div className="mt-4">
           <div className="mx-auto max-w-7xl px-6">
             <div className="text-center sm:mx-auto lg:mr-auto lg:mt-12">
               <AnimatedGroup variants={transitionVariants}>
