@@ -39,7 +39,7 @@ const HeroSection = function HeroSection({ className, ...props }: HeroSectionPro
     >
       {/* <Spotlight /> */}
 
-      <BackgroundPattern type="dots" />
+      <BackgroundPattern />
       <section>
         <div className="mt-4">
           <div className="mx-auto max-w-7xl px-6">
@@ -81,7 +81,7 @@ const HeroSection = function HeroSection({ className, ...props }: HeroSectionPro
                 Web
               </H>
               <div className="max-w-[61%] mx-auto mt-4">
-                <H as="h5" variant={"subtle"} align="center">
+                <H as="h5" variant="subtle" align="center">
                   Discover top Web3 tools, dApps, and services — curated to help you build, explore,
                   and thrive in the decentralized ecosystem.
                 </H>

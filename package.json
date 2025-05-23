@@ -12,6 +12,7 @@
     "fix": "biome check --fix --unsafe",
     "format": "biome format --write .",
     "typecheck": "tsc --noEmit",
+    "precommit": "npm run typecheck && npm run check",
     "prepare": "husky"
   },
   "dependencies": {

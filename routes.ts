@@ -7,6 +7,9 @@
 
 export const PUBLIC_ROUTES = [
   "/auth/new-verification", // Public for email verification
+  "/podcasts",
+  "/categories",
+  "/books",
   "/legal/privacy-policy",
   "/legal/terms-of-service",
 ] as const

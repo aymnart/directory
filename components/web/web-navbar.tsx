@@ -37,10 +37,10 @@ function WebNavbar({ session }: { session: Session | null }) {
   const menuItems = [
     { name: "Home", href: "/", isActive: pathname === "/" },
     { name: "Categories", href: "/categories", isActive: pathname.startsWith("/categories") },
-    { name: "Advertise", href: "/advertise", isActive: pathname.startsWith("/advertise") },
     { name: "Books", href: "/books", isActive: pathname.startsWith("/books") },
     { name: "Podcasts", href: "/podcasts", isActive: pathname.startsWith("/podcasts") },
     { name: "Learn", href: "/learn", isActive: pathname.startsWith("/learn") },
+    { name: "Advertise", href: "/advertise", isActive: pathname.startsWith("/advertise") },
     { name: "Submit", href: "/submit", isActive: pathname.startsWith("/advertise") },
   ]
 
@@ -63,7 +63,7 @@ function WebNavbar({ session }: { session: Session | null }) {
         <div className="flex flex-wrap items-center lg:border-x max-w-5xl mx-auto justify-between gap-6 py-3 px-4 md:px-6 lg:px-4 lg:gap-0">
           {/* Logo and Mobile Toggle Button */}
           <div className="flex w-full justify-between lg:w-auto">
-            <Logo width={70} />
+            <Logo />
 
             <Button
               variant="ghost"

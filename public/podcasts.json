@@ -173,54 +173,60 @@
         "title": "Episode 788: Life in Motion",
         "duration": "58:45",
         "date": "2023-09-23"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Radiolab",
+    "description": "Exploring the mysteries of science and life",
+    "icon": "Music",
+    "iconStyle": "music",
+    "time": "3 days ago",
+    "badge": {
+      "text": "Top Rated",
+      "variant": "blue"
+    },
+    "href": "radiolab",
+    "episodes": [
+      {
+        "id": "4-1",
+        "title": "The Nature of Reality",
+        "duration": "52:30",
+        "date": "2023-09-29"
       },
       {
-        "id": "3-3",
-        "title": "Episode 787: Hidden Stories",
-        "duration": "1:05:30",
-        "date": "2023-09-16"
+        "id": "4-2",
+        "title": "Quantum Mechanics Made Simple",
+        "duration": "48:15",
+        "date": "2023-09-22"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Crime Junkie",
+    "description": "True crime stories that will keep you on edge",
+    "icon": "Music",
+    "iconStyle": "music",
+    "time": "4 days ago",
+    "badge": {
+      "text": "Trending",
+      "variant": "indigo"
+    },
+    "href": "crime-junkie",
+    "episodes": [
+      {
+        "id": "5-1",
+        "title": "The Mysterious Disappearance",
+        "duration": "45:20",
+        "date": "2023-09-28"
       },
       {
-        "id": "3-4",
-        "title": "Episode 786: The American Dream",
-        "duration": "59:20",
-        "date": "2023-09-09"
-      },
-      {
-        "id": "3-5",
-        "title": "Episode 785: Family Matters",
-        "duration": "1:01:45",
-        "date": "2023-09-02"
-      },
-      {
-        "id": "3-6",
-        "title": "Episode 784: Working Life",
-        "duration": "57:30",
-        "date": "2023-08-26"
-      },
-      {
-        "id": "3-7",
-        "title": "Episode 783: Summer Stories",
-        "duration": "1:03:15",
-        "date": "2023-08-19"
-      },
-      {
-        "id": "3-8",
-        "title": "Episode 782: Modern Love",
-        "duration": "58:50",
-        "date": "2023-08-12"
-      },
-      {
-        "id": "3-9",
-        "title": "Episode 781: The Journey",
-        "duration": "1:00:20",
-        "date": "2023-08-05"
-      },
-      {
-        "id": "3-10",
-        "title": "Episode 780: Small Towns",
-        "duration": "59:45",
-        "date": "2023-07-29"
+        "id": "5-2",
+        "title": "Cold Case Files",
+        "duration": "42:35",
+        "date": "2023-09-21"
       }
     ]
   }

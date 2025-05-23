@@ -26,7 +26,7 @@ const books = [
 
 export default function BookGrid() {
   return (
-    <section className="mt-12 flex flex-col w-full">
+    <section className="mt-18 flex flex-col w-full">
       <H as="h3" className="flex gap-1 justify-center items-center p-5 font-semibold">
         Books
       </H>

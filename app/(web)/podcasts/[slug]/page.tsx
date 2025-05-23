@@ -29,7 +29,7 @@ async function Page({ params }: { params: Promise<{ slug: string }> }) {
     )
   }
   return (
-    <main className={cn("w-full mx-auto bg-background", "overflow-hidden")}>
+    <main className={cn("w-full mx-auto bg-background")}>
       <div
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=1200&h=400&fit=crop')`,
@@ -39,9 +39,9 @@ async function Page({ params }: { params: Promise<{ slug: string }> }) {
         className="relative h-60 p-6"
       >
         <Button
-          className="absolute top-0 right-0 z-10 m-2"
-          size="sm"
-          variant="outline"
+          className="absolute top-0 left-0 z-10 m-2 text-foreground"
+          size="default"
+          variant="link"
           prefix={<ArrowLeftIcon />}
           hover={false}
           asChild
@@ -62,7 +62,7 @@ async function Page({ params }: { params: Promise<{ slug: string }> }) {
               <H as="h3" className="mb-1 font-semibold">
                 {podcast.title}
               </H>
-              <p className="text-sm text-foreground">{podcast.description}</p>
+              <p className="text-sm text-muted-foreground">{podcast.description}</p>
             </div>
           </div>
         </div>
@@ -84,12 +84,12 @@ async function Page({ params }: { params: Promise<{ slug: string }> }) {
         </div>
       </div>
 
-      <div className="divide-y divide-border">
+      <div className="divide-y divide-border  diagonal-pattern space-y-2 screen-line-before">
         {podcast.episodes.map(episode => {
           return (
             <div
               key={episode.id}
-              className="group flex cursor-pointer items-center gap-4 px-6 py-3 hover:bg-card transition-colors"
+              className="bg-background group flex cursor-pointer items-center gap-4 px-6 py-3 hover:bg-card transition-colors not-first:border-t"
             >
               <div className="w-10 h-10 rounded-lg overflow-hidden">
                 <img
@@ -99,7 +99,9 @@ async function Page({ params }: { params: Promise<{ slug: string }> }) {
                 />
               </div>
               <div className="flex-1 min-w-0">
-                <h3 className="text-sm font-medium text-foreground truncate">{episode.title}</h3>
+                <H as="h6" className="text-sm font-medium text-foreground truncate">
+                  {episode.title}
+                </H>
                 <p className="text-xs text-muted-foreground">
                   {new Date(episode.date).toLocaleDateString()}
                 </p>
