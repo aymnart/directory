@@ -6,6 +6,7 @@ import {
   Outfit,
   Poppins,
   Space_Grotesk,
+  Tiny5,
   Ubuntu_Mono,
 } from "next/font/google"
 
@@ -15,6 +16,7 @@ export const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
   weight: ["400"],
 })
+export const tiny5 = Tiny5({ subsets: ["latin"], weight: ["400"] })
 export const ubuntuMono = Ubuntu_Mono({
   subsets: ["latin"],
   weight: ["400"],
@@ -42,6 +44,7 @@ export const fontMap = {
   AtkinsonHyperlegible: atkinsonHyperlegible.className,
   FiraCode: firaCode.className,
   Outfit: outfit.className,
+  Tiny5: tiny5.className,
 }
 
 /**

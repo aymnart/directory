@@ -53,7 +53,7 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            {open ? <Logo /> : <Logo type="letter" width={24} className="mx-auto" />}
+            <Logo type={open ? "word" : "letter"} />
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>

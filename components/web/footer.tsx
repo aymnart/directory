@@ -31,7 +31,7 @@ const links = [
 export default function FooterSection() {
   return (
     <footer className="w-full mt-12">
-      <Logo className="mx-auto" />
+      <Logo className="mx-auto text-5xl" />
 
       <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
         {links.map((link, index) => (

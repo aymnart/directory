@@ -58,12 +58,12 @@ function WebNavbar({ session }: { session: Session | null }) {
     <header className="w-full fixed top-0 inset-x-0 z-20">
       <nav
         data-state={menuState && "active"}
-        className="z-20 w-full bg-background/15 border-b backdrop-blur md:relative lg:dark:bg-transparent"
+        className="z-20 w-full bg-background/80 border-b backdrop-blur md:relative"
       >
         <div className="flex flex-wrap items-center lg:border-x max-w-5xl mx-auto justify-between gap-6 py-3 px-4 md:px-6 lg:px-4 lg:gap-0">
           {/* Logo and Mobile Toggle Button */}
           <div className="flex w-full justify-between lg:w-auto">
-            <Logo />
+            <Logo enableOnHover />
 
             <Button
               variant="ghost"
