@@ -80,7 +80,7 @@ const HeroSection = function HeroSection({ className, ...props }: HeroSectionPro
                 </GradientText>
                 Web
               </H>
-              <div className="max-w-[61%] mx-auto mt-4">
+              <div className="max-w-[61ch] mx-auto mt-4">
                 <H as="h5" variant="subtle" align="center">
                   Discover top Web3 tools, dApps, and services — curated to help you build, explore,
                   and thrive in the decentralized ecosystem.

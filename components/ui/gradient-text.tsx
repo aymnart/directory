@@ -12,7 +12,7 @@ interface GradientTextProps {
 export default function GradientText({
   children,
   className = "",
-  colors = ["hsl(var(--primary))", "hsl(var(--secondary))", "hsl(var(--accent))"],
+  colors = ["hsl(var(--primary))", "hsl(var(--secondary))", "hsl(var(--primary))"],
   animationSpeed = 8,
   showBorder = false,
 }: GradientTextProps) {

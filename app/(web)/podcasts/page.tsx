@@ -45,7 +45,7 @@ export default async function Page() {
       </H>
       <div
         className={cn(
-          "grid grid-cols-1 md:grid-cols-2 gap-2 p-2",
+          "grid grid-cols-1 md:grid-cols-2 gap-2 p-4",
           "diagonal-pattern screen-line-before screen-line-after",
         )}
       >
